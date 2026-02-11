@@ -1,0 +1,32 @@
+Fairness checks
+
+Stratified performance:  
+Propose evaluating model performance separately by key groups (e.g., age, gender, race, rural vs. urban) if those fields are available or added later.
+
+Class‑specific metrics:  
+Emphasize sensitivity/recall for prediabetes and diabetes, not just overall accuracy.
+
+Threshold review:  
+Recommend leadership review of decision thresholds to avoid systematically under‑identifying high‑risk patients.
+
+Governance rules
+
+Model documentation:  
+Require a “model card” that documents data source, limitations (self‑report, class imbalance), and intended use.
+
+Equity review:  
+Establish an equity review step before deployment, including community or frontline clinician input.
+
+Use constraints:  
+Clarify that the model should support—not replace—clinical judgment, especially for marginalized populations.
+
+Data quality improvements
+
+Outlier review:  
+Investigate extreme BMI values (e.g., >60) for data entry errors.
+
+Augment with structural data:  
+Recommend adding variables such as race/ethnicity, insurance status, and geography (urban/rural) to better understand inequities.
+
+Improve measurement:  
+Encourage combining self‑report with clinical data where possible (e.g., lab values, claims).
