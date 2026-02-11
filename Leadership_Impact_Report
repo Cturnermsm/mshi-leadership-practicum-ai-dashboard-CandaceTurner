@@ -1,0 +1,103 @@
+1. Introduction & Practicum Context
+TruLite Health is an equity‑driven health technology company focused on reducing disparities in clinical care through its HITRUST‑certified platform, Truity™. The organization integrates clinical, behavioral, and social insights directly into provider workflows to support equitable decision‑making at the point of care.
+
+In my practicum role, I supported equity‑centered analysis, contributed to policy and workflow recommendations, and examined how data‑driven tools can be governed responsibly to avoid reinforcing structural inequities. This project explores how leaders at TruLite Health—and similar organizations—can use population‑level health indicators to guide equitable diabetes prevention and strengthen early‑risk identification.
+
+2. Leadership Question
+How can health technology leaders use routinely collected risk‑factor data (such as BMI, blood pressure, cholesterol, and health behaviors) to improve diabetes prevention and ensure that predictive tools do not reinforce inequities or misclassify high‑risk patients?
+
+3. Data & Methods
+Data Source: 2015 Behavioral Risk Factor Surveillance System (BRFSS) Diabetes Health Indicators dataset
+
+Fields Used: Diabetes status (0 = none, 1 = prediabetes, 2 = diabetes), BMI, high blood pressure, high cholesterol, smoking, physical activity, fruit consumption, cholesterol screening
+
+Tools Used: Excel pivot tables, simple charts, and AI‑assisted interpretation
+
+Analysis Approach:
+
+Generated pivot tables to examine distributions and averages
+
+Created simple visualizations (bar charts, averages)
+
+Used AI to generate leadership‑focused insights and then critiqued feasibility in the context of TruLite Health’s mission and operational model
+
+4. Key Findings
+Descriptive insights from the dataset include:
+
+Average BMI increases with diabetes severity:
+
+No diabetes: 27.7
+
+Prediabetes: 30.7
+
+Diabetes: 31.9
+
+High blood pressure and high cholesterol are common, each affecting ~40% of respondents.
+
+Physical activity is reported by 76% of respondents, though this is self‑reported and may not reflect true behavior.
+
+Cholesterol screening rates are extremely high (96%), suggesting access bias or self‑report bias.
+
+AI‑Generated Insights (summarized):
+
+Strengthen early‑risk identification workflows.
+
+Target outreach toward communities with higher BMI and comorbidity burdens.
+
+Address structural barriers such as food access and transportation.
+
+Monitor predictive models for bias, especially given class imbalance.
+
+My Critique of AI Suggestions (specific to TruLite Health):
+
+Realistic:
+
+Embedding early‑risk nudges into Truity™
+
+Creating equity‑centered dashboards for health system partners
+
+Integrating CHWs or care navigators into follow‑up workflows
+
+Less feasible:
+
+Large‑scale structural interventions (e.g., food system redesign) fall outside TruLite Health’s scope and require multi‑sector partnerships
+
+Needs adaptation:
+
+AI recommendations assume access to demographic variables (race, rurality, insurance), which may not be available in all partner datasets; governance work is needed to ensure responsible use
+
+5. Leadership Analysis
+The BMI pattern highlights a clear progression of risk that leaders can use to strengthen prevention efforts. For a company like TruLite Health, this insight reinforces the importance of embedding early‑risk detection into clinical workflows in a way that is equitable, transparent, and clinically meaningful.
+
+Leadership implications include:
+
+Workflow:  
+Truity™ can surface risk‑factor combinations (e.g., BMI + high BP) to clinicians at the point of care, reducing reliance on memory or subjective judgment.
+
+Communication:  
+Clear, culturally responsive patient‑facing materials are essential to avoid stigma and support engagement.
+
+Equity:  
+Without demographic variables, risk models may mask disparities. TruLite Health can encourage partners to collect and integrate equity‑relevant fields responsibly.
+
+Quality:  
+Predictive tools must be governed with transparency, fairness checks, and community input to avoid misclassification harms—especially for populations historically underdiagnosed or under‑screened.
+
+6. Action Plan
+1. Embed early‑risk alerts into Truity™  
+Use BMI + comorbidities to trigger standardized, evidence‑based recommendations for screening, counseling, or follow‑up.
+
+2. Develop an equity‑centered diabetes prevention dashboard for partner health systems  
+Include BMI trends, screening rates, and risk‑factor combinations. Add equity stratification where data is available.
+
+3. Strengthen community‑aligned prevention strategies  
+Support partners in collaborating with local organizations to deliver culturally relevant education and outreach in high‑risk communities.
+
+4. Establish a model governance and fairness review process  
+Require model cards, fairness checks, and leadership review before deploying any predictive tool within Truity™.
+
+5. Train clinicians and partner teams on bias‑aware risk interpretation  
+Emphasize that BMI is one indicator and must be interpreted alongside social drivers of health and lived experience.
+
+7. Reflection on Leadership Growth
+This project deepened my understanding of how leaders in health technology can use data responsibly while centering equity and human experience. Working with TruLite Health sharpened my ability to translate raw data into actionable strategies that align with organizational mission, workflow realities, and community needs. I learned how easily predictive tools can reproduce disparities when datasets lack structural variables or contain self‑report bias. This experience strengthened my commitment to building systems that honor lived experience, promote continuity of care, and support equitable health outcomes across diverse populations.
