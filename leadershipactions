@@ -1,8 +1,6 @@
 Fairness checks
-
 Stratified performance:  
 Propose evaluating model performance separately by key groups (e.g., age, gender, race, rural vs. urban) if those fields are available or added later.
-
 Class‑specific metrics:  
 Emphasize sensitivity/recall for prediabetes and diabetes, not just overall accuracy.
 
@@ -30,3 +28,5 @@ Recommend adding variables such as race/ethnicity, insurance status, and geograp
 
 Improve measurement:  
 Encourage combining self‑report with clinical data where possible (e.g., lab values, claims).
+
+A model trained on this dataset might learn that most people do not have diabetes and therefore default to predicting “no diabetes” in ambiguous cases. Individuals with moderate BMI, borderline blood pressure, or inconsistent health behaviors could be misclassified as low risk, especially if they resemble the majority class in the data. Without explicit fairness checks, this could disproportionately affect patients from under‑resourced communities whose risk patterns differ from the majority represented in the dataset.
