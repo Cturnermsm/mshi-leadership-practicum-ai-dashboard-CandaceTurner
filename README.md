@@ -6,6 +6,68 @@ No PHI is included in this repository. All data are public, aggregated, and comp
 The questions that I am asking and working to answer is: How can we reduce bias in the algorithm while also reducing burnout within the leadership team?
 How can health system leaders use routinely collected risk-factor data (e.g., BMI, blood pressure, cholesterol, smoking, physical activity) to identify and address inequities in diabetes risk—while ensuring that predictive models do not systematically overlook or misclassify high‑risk patients?
 
+LEADERSHIP_IMPACT_REPORT.md
+The dataset includes approximately 254,000 adult survey respondents from the 2015 Behavioral Risk Factor Surveillance System (BRFSS). The target variable, Diabetes_012, classifies individuals as having no diabetes (0), prediabetes (1), or diabetes (2). Predictor variables include clinical risk factors (e.g., high blood pressure, high cholesterol, BMI), health behaviors (smoking, physical activity, fruit consumption), and prior screening (cholesterol check in the past 5 years).
+
+Diabetes_012:  
+0 = no diabetes, 1 = prediabetes, 2 = diabetes.
+Most respondents have no diabetes; a smaller proportion have diabetes; very few have prediabetes.
+
+HighBP:  
+0 = no high blood pressure, 1 = high blood pressure.
+About 43% have high blood pressure.
+
+HighChol:  
+0 = no high cholesterol, 1 = high cholesterol.
+About 42% have high cholesterol.
+
+CholCheck:  
+0 = no cholesterol check in 5 years, 1 = yes.
+About 96% report having had a cholesterol check.
+
+BMI:  
+Continuous body mass index, mean ≈ 28.4 (overweight range), with values from 12 to 98 and a right‑skewed distribution.
+
+Smoker:  
+0 = has not smoked ≥100 cigarettes, 1 = has.
+About 44% meet the “ever smoker” threshold.
+
+Stroke:  
+0 = never told had a stroke, 1 = yes.
+Around 4% report a history of stroke.
+
+HeartDiseaseorAttack:  
+0 = no CHD/MI, 1 = yes.
+Around 9% report coronary heart disease or myocardial infarction.
+
+PhysActivity:  
+0 = no physical activity in past 30 days (outside job), 1 = yes.
+About 76% report some physical activity.
+
+Fruits:  
+0 = does not consume fruit ≥1 time/day, 1 = yes.
+About 63% report daily fruit consumption
+
+a. Class imbalance
+
+The Diabetes_012 variable is highly imbalanced: the majority of respondents have no diabetes, a smaller proportion have diabetes, and a very small proportion have prediabetes. Any predictive model trained on this data could become biased toward predicting “no diabetes,” potentially missing individuals at early stages of disease.
+
+b. Self‑report and access bias
+
+Variables such as CholCheck, PhysActivity, Fruits, and Smoker are self‑reported and may be influenced by recall and social desirability bias. The very high rate of cholesterol checks (≈96%) may also reflect underlying access differences that are not fully captured in the dataset (e.g., insurance status, geography, race/ethnicity).
+
+c. Missing structural variables
+
+The dataset, as used here, does not explicitly include race, income, or rurality. This limits the ability to directly assess inequities across marginalized groups and increases the risk that models built on these variables could reproduce existing structural inequities without making them visible.
+
+d. Potential misclassification harms
+
+If a model under‑predicts prediabetes or diabetes for certain subgroups (e.g., those with lower healthcare access or atypical risk profiles), leaders could unintentionally allocate fewer resources (screenings, outreach, education) to communities that already experience higher burdens of disease.
+
+A model trained on this dataset might learn that most people do not have diabetes and therefore default to predicting “no diabetes” in ambiguous cases. Individuals with moderate BMI, borderline blood pressure, or inconsistent health behaviors could be misclassified as low risk, especially if they resemble the majority class in the data. Without explicit fairness checks, this could disproportionately affect patients from under‑resourced communities whose risk patterns differ from the majority represented in the dataset.
+
+
+
 Figures:
 <img width="901" height="422" alt="image" src="https://github.com/user-attachments/assets/5411e1e3-8d3f-44fd-a9f7-c55321970819" />
 <img width="420" height="193" alt="image" src="https://github.com/user-attachments/assets/842f7203-2d6e-49fb-bb5e-59893bae524e" />
